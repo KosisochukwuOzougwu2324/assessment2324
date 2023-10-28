@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>Contact</title>
+    <link rel="icon"href="img/parklogo.jpg">
+  </head>
+  <body class="bg-cream">
+<header>
+  <nav class="flex justify-between items-center w-full">
+    <section>
+      <a class="logo flex flex-col" href="index.html">
+        <img src="img/parklogo.jpg" id="logo" alt="Logo" />
+        <strong class="nav-title">NELSON MANDELA PARK</strong>
+      </a>
+    </section>
+    <ul class="nav-links">
+      <li>
+        <a
+          href="javascript:void(0)"
+          onclick="closeSideBar()"
+          class="d-md-none d-block"
+          >Close</a
+        >
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sports.html">Sports</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="rental.html">Rental</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li class="last-link"><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <section class="d-md-none d-block">
+      <a href="javascript:void(0)" onclick="openSideBar()">
+        <img src="img/menu.png" id="logo" alt="Logo" />
+      </a>
+    </section>
+  </nav>
+</header>
+<section class="green-bar-top"></section>
+<main>
+    <section class="bg-contact flex items-center">
+        <section>
+          <h1 class="ml-2 text-xl text-white">CONTACT</h1>
+          <ul class="breadcrumbs ml-2">
+            <li class="text-white">Home</li>
+            <li class="text-white">Contact</li>
+          </ul>
+        </section>
+      </section>
+      <section class="w-full mt-2">
+        <h2 class="title text-center line-1">
+          Thinking of getting in touch? We would love to hear from you.
+        </h2>
+      </section>
+      <section class="p-3 form">
+        <p class="text-md-2 ml-5 mb-1">Fields with <span class="text-pink">*</span> are compulsory</p>
+        <form class="w-75 mb-3">
+          <p class="text-md-2 mb-1">Gender:</p>
+          <section class="flex flex-row justify-between w-80 mb-1">
+            <section class="text-center">
+              <label for="male">Male</label><br />
+              <input type="radio" name="gender" value="male" title="male" />
+            </section>
+            <section class="text-center">
+              <label for="male">Female</label><br />
+              <input type="radio" name="gender" value="female" title="female" />
+            </section>
+            <section class="text-center">
+              <label for="male">Other gender</label><br />
+              <input type="radio" name="gender" value="other" title="other" />
+            </section>
+          </section>
+            <section class="w-full">
+              <label for="first_name">First Name<span class="text-pink">*</span>:</label>
+              <input
+                type="text"
+                name="first_name"
+                placeholder="Kosisochukwu"
+                title="First Name"
+                class="w-full bg-white border-0 p-1"
+                required
+              />
+            </section>
+            <section class="w-full mt-3">
+              <label for="last_name">Last Name<span class="text-pink">*</span>:</label>
+              <input
+                type="text"
+                name="last_name"
+                placeholder="Ozougwu"
+                title="Last Name"
+                class="w-full bg-white border-0 p-1"
+                required
+              />
+            </section>
+          <section class="w-full mt-3">
+            <label for="email">E-mail Address<span class="text-pink">*</span>:</label>
+            <input
+              type="text"
+              name="email"
+              placeholder="Kosisochukwu90@email.com"
+              title="E-mail Address"
+              class="w-full bg-white border-0 p-1"
+              required
+            />
+          </section>
+          <section class="w-full mt-3">
+            <label for="phone">Phone Number:</label>
+            <input
+              type="text"
+              name="phone"
+              placeholder="+31626223855"
+              title="Phone Number"
+              class="w-full bg-white border-0 p-1"
+            />
+            <small>Include Country code</small>
+          </section>
+          <section class="w-full mt-3">
+            <label for="message">Message<span class="text-pink">*</span>:</label>
+            <textarea
+            required
+              class="w-full bg-white border-0 p-1"
+              name="message"
+              title="message"
+            ></textarea>
+          </section>
+          <section class="w-full mt-3">
+            <button class="btn-send" type="submit">SEND</button>
+          </section>
+        </form>
+      </section>
+      <section class="p-3 message flex justify-center hidden">
+        <h2 class="text-md-2 text-center w-50">
+          Thank you for your response! <br /> Your messages will be forwarded onto the
+          appropriate department. We aim to reply within 48 hours.
+        </h2>
+      </section>
+    </main>
+    <footer class="bg-black p-2">
+      <p class="text-md-2">
+        &copy; Nelson Mandela Park 2023 All Rights Reserved
+      </p>
+      <section>
+        <ul class="footer-list">
+          <li class="flex mb-05">
+            <img src="img/mail.png" alt="mail" class="mr-1" />
+            <span>NelsonMandelaP@email.com</span>
+          </li>
+          <li class="flex">
+            <img src="img/phone.png" alt="phone" class="mr-1" />
+            <span>0653735378</span>
+          </li>
+        </ul>
+      </section>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
